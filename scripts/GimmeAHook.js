@@ -1,7 +1,7 @@
 class GimmeAHook {
     static hookGenerator = new GimmeAHook();
 
-    constructor(genre = "fantasy", hookType = "adventure", length = "medium", description = "", excludedStrings = []) {
+    constructor(genre = "fantasy", hookType = "adventure", length = "short", description = "", excludedStrings = []) {
         this.defaultGenre = genre;
         this.defaultHookType = hookType;
         this.defaultLength = length;
@@ -26,6 +26,9 @@ class GimmeAHook {
             promptContent = `${promptContent} ${description}.`
         if (excludedStrings.length > 0)
             promptContent = `${promptContent} Do not include: ${excludedStrings.join(', ')}.`
+
+
+        promptContent = `${promptContent} Make it completely unique, nothing like the previous responses.`
         try {
             const prompt = await IntegrateAI.stringToUserMessage(promptContent)
 
@@ -36,7 +39,7 @@ class GimmeAHook {
             const plotHook = response.content;
 
 
-            this.sessionHooks = IntegrateAI.combineUniqueArrays([response], this.sessionHooks)
+            this.sessionHooks.push(IntegrateAI.combineUniqueArrays([response], this.sessionHooks))
 
 
             return plotHook;
