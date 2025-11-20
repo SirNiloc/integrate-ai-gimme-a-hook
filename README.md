@@ -15,3 +15,5 @@ GimmeAHook is a FoundryVTT module designed to kickstart your creativity. It uses
 **It’s not about replacing your creativity – it's about sparking it.** Sometimes, all you need is a little nudge to get the ideas flowing.
 
 Let GimmeAHook be your secret weapon against writer’s block. Happy gaming!
+
+![GitHub all releases](https://img.shields.io/github/downloads/SirNiloc/integrate-ai-gimme-a-hook/total.svg)
