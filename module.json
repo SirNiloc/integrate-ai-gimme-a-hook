@@ -30,7 +30,7 @@
   "scripts": [
     "scripts/GimmeAHook.js"
   ],
-  "manifest": "https://github.com/SirNiloc/integrate-ai-gimme-a-hook/releases/latest/download/module.json",
-  "download": "https://github.com/SirNiloc/integrate-ai-gimme-a-hook/releases/latest/download/module.zip",
+  "manifest": "https://github.com/SirNiloc/integrate-ai-gimme-a-hook/releases/download/1.0.0/module.json",
+  "download": "https://github.com/SirNiloc/integrate-ai-gimme-a-hook/releases/download/1.0.0/module.zip",
   "description": ""
 }
