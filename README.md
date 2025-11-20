@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <body>
 
     <h1>Stuck on a Plot Hook? GimmeAHook Can Help.</h1>
